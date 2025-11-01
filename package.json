@@ -1,0 +1,26 @@
+{
+  "name": "spring-boot-web3j",
+  "version": "1.0.0",
+  "description": "This is a simple example of a Spring Boot application that integrates with Web3J to interact with Ethereum smart contracts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyonRay/spring-boot-web3j.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyonRay/spring-boot-web3j/issues"
+  },
+  "homepage": "https://github.com/kyonRay/spring-boot-web3j#readme",
+  "devDependencies": {
+    "hardhat": "^3.0.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
