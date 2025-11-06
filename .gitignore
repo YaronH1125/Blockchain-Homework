@@ -1,11 +1,24 @@
-gradle/**
-.idea/**
-node_modules/**
+# Gradle
+.gradle/
+gradle/
 build/
-src/main/resources/application.properties
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!gradle/wrapper/gradle-wrapper.properties
+
+# Node
+node_modules/
+package-lock.json
+
+# Build output
+build/
+out/
+bin/
+dist/
+target/
+
+# Application properties
+src/main/resources/application.properties
+src/main/resources/application-*.properties
 
 ### IntelliJ IDEA ###
 .idea**
