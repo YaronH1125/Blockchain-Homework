@@ -1,8 +1,6 @@
 package com.wetech.demo.web3j.controller;
 
-import com.wetech.demo.web3j.contracts.mytoken.MyToken;
 import com.wetech.demo.web3j.service.MyTokenService;
-import com.wetech.demo.web3j.service.SimpleStorageService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -50,40 +48,6 @@ public class MyTokenController {
         return ResponseEntity.ok(response);
     }
 
-    /**
-     * Get the current value stored in the contract
-     * @return the stored value
-     */
-//    @GetMapping("/value/get")
-//    public CompletableFuture<ResponseEntity<Map<String, String>>> getValue() {
-//        return storageService.getValue()
-//                .thenApply(value -> {
-//                    Map<String, String> response = new HashMap<>();
-//                    response.put("value", value.toString());
-//                    response.put("contractAddress", storageService.getContractAddress());
-//                    return ResponseEntity.ok(response);
-//                });
-//    }
-//
-//    /**
-//     * Set a new value in the contract
-//     * @param value the new value to store
-//     * @return the transaction receipt details
-//     */
-//    @PostMapping("/value/set")
-//    public CompletableFuture<ResponseEntity<Map<String, String>>> setValue(@RequestParam String value) {
-//        BigInteger intValue = new BigInteger(value);
-//        return storageService.setValue(intValue)
-//                .thenApply(receipt -> {
-//                    Map<String, String> response = new HashMap<>();
-//                    response.put("transactionHash", receipt.getTransactionHash());
-//                    response.put("blockNumber", receipt.getBlockNumber().toString());
-//                    response.put("gasUsed", receipt.getGasUsed().toString());
-//                    response.put("status", receipt.getStatus());
-//                    response.put("contractAddress", storageService.getContractAddress());
-//                    return ResponseEntity.ok(response);
-//                });
-//    }
 
     /**
      * Get the address of the currently loaded contract
